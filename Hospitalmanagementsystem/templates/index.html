@@ -1,0 +1,52 @@
+{% extends 'navbar.html' %}
+
+{% block content %}
+<h2 align="center">Login Page</h2>
+<form action="readdata" method="post">
+    {% csrf_token%}
+<table align="center">
+<tr>
+    <td>name:</td>
+    <td>
+        <input type="text" name="txtName" placeholder="enter name">
+    </td>
+</tr>
+<tr>
+    <td>age:</td>
+    <td>
+        <input type="number" name="txtAge" placeholder="enter age">
+    </td>
+</tr>
+<tr>
+    <td>city:</td>
+    <td>
+    <select name="ddlCity">
+        <option>--select--</option>
+        <option>bengaluru</option>
+        <option>hyderabad</option>
+        <option>mumbai</option>
+        <option>chennai</option>
+    </select>
+    </td>
+</tr>
+<tr>
+    <td>disease:</td>
+    <td>
+    <select name="ddlDisease">
+        <option>--select--</option>
+        <option>headache</option>
+        <option>fever</option>
+        <option>joints pain</option>
+        <option>cancer</option>
+    </select>
+    </td>
+</tr>
+<tr>
+    <td>
+        <input type="submit" name="btnsub" value="submit">
+    </td>
+</tr>
+</table>
+</form>
+
+{% endblock %}
