@@ -1,2 +1,2 @@
-# Hospital-Management-System
-Django project with python
+# Django with Python Project
+Hospital Management Sytem
